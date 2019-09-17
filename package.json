@@ -1,0 +1,16 @@
+{
+  "name": "whitelabel-widget",
+  "version": "0.1.0",
+  "description": "WhiteLabel Widget",
+  "main": "whitelabel-widget.js",
+  "repository": "git@gitlab.gitlab.bcs.ru:CreditExchange/whitelabel-widget.git",
+  "author": "Ruslan Mart <martynovra@msk.bcs.ru>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "uglify-js": "^3.6.0"
+  },
+  "scripts": {
+    "minify": "uglifyjs widget.js -o widget.min.js --mangle"
+  }
+}

@@ -85,7 +85,7 @@
             server: 'odobrim.ru',
             type: 'cash',
 
-            amount: 10000, // сумма кредита
+            amount: 100000, // сумма кредита
             period: 12    // срок кредита
         });
     }

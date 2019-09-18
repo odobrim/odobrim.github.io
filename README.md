@@ -1,7 +1,7 @@
 ## Установка
 
 ```html
-<script>!function(e,i){var t=e.createElement("script"),o=[].slice.call(e.scripts).pop();t.async=!0,t.onload=function(){_odobrimWidget._target=o,"undefined"!=typeof _odobrimWidgetInit&&_odobrimWidgetInit(_odobrimWidget)},t.src="//odobrim.ru/widget/whitelabel/lib/0.1.0/script.js",o.parentNode.insertBefore(t,o)}(document);</script>
+<script>!function(e,i){var t=e.createElement("script"),o=[].slice.call(e.scripts).pop();t.async=!0,t.onload=function(){_odobrimWidget._target=o,"undefined"!=typeof _odobrimWidgetInit&&_odobrimWidgetInit(_odobrimWidget)},t.src="//odobrim.github.io/widget.min.js",o.parentNode.insertBefore(t,o)}(document);</script>
 
 <script>
     function _odobrimWidgetInit(widget) {
@@ -75,7 +75,7 @@
 ### 1. Вставка виджета для «bankiros»
 
 ```html
-<script>!function(e,i){var t=e.createElement("script"),o=[].slice.call(e.scripts).pop();t.async=!0,t.onload=function(){_odobrimWidget._target=o,"undefined"!=typeof _odobrimWidgetInit&&_odobrimWidgetInit(_odobrimWidget)},t.src="//odobrim.ru/widget/whitelabel/lib/0.1.0/script.js",o.parentNode.insertBefore(t,o)}(document);</script>
+<script>!function(e,i){var t=e.createElement("script"),o=[].slice.call(e.scripts).pop();t.async=!0,t.onload=function(){_odobrimWidget._target=o,"undefined"!=typeof _odobrimWidgetInit&&_odobrimWidgetInit(_odobrimWidget)},t.src="//odobrim.github.io/widget.min.js",o.parentNode.insertBefore(t,o)}(document);</script>
 
 <script>
     function _odobrimWidgetInit(widget) {

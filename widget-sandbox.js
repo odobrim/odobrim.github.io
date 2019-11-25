@@ -51,7 +51,7 @@ var _odobrimWidget = (function(window, document) {
         params.append('location', getPartnerLocation());
         params.append('token', token);
 
-        return '//' + data.server + '/widget/' + data.widgetId + '/?' + params;
+        return data.server + '/widget/' + data.widgetId + '/?' + params;
     }
 
     function handleMessageEvent(event) {

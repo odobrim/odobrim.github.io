@@ -62,7 +62,7 @@ window.onload = function () {
     const successUrlData = form.getAttribute('data-success-url');
     if (!successUrlData) return;
     const newLink = updateLinkWithParams(successUrlData, dataValuesList);
-    form.setAttribute(' data-success-url', newLink);
+    form.setAttribute('data-success-url', newLink);
   });
 }
 

@@ -15,6 +15,7 @@ function updateLinkWithParams(link, dataList) {
     }, link);
 }
 
+/// http://landings.odobrim.ru/tele2/predlosheniya?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_content}&transaction_id={transaction_id}
 getDataFromAddressBar = () => (
   [
     {
@@ -24,6 +25,10 @@ getDataFromAddressBar = () => (
     {
       key: 'utm_campaign',
       value: getRefQueryParam('utm_campaign'),
+    },
+    {
+      key: 'utm_medium',
+      value: getRefQueryParam('utm_medium'),
     },
     {
       key: 'transaction_id',
@@ -50,7 +55,7 @@ window.onload = function () {
       elem.href = newLink;
     };
   });
-  
+
   const formsList = document.querySelectorAll('form');
   formsList.forEach(form => {
     const successUrlData = form.getAttribute('data-success-url');

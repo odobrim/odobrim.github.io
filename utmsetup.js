@@ -15,7 +15,8 @@ function updateLinkWithParams(link, dataList) {
     }, link);
 }
 
-/// http://landings.odobrim.ru/tele2/predlosheniya?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_content}&transaction_id={transaction_id}
+/// https://landings.odobrim.ru/tele2/predlosheniya?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_content}&transaction_id={transaction_id}
+// https://landings.odobrim.ru/tele2/predlosheniya
 getDataFromAddressBar = () => (
   [
     {
@@ -61,7 +62,7 @@ window.onload = function () {
     const successUrlData = form.getAttribute('data-success-url');
     if (!successUrlData) return;
     const newLink = updateLinkWithParams(successUrlData, dataValuesList);
-    form.setAttribute('data-success-url', newLink);
+    form.setAttribute(' data-success-url', newLink);
   });
 }
 

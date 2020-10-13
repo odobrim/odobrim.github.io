@@ -56,7 +56,15 @@ window.onload = function () {
       elem.href = newLink;
     };
   });
-
+  
+  const divsList = document.querySelectorAll('div');
+  divsList.forEach(div => {
+    const successUrlData = div.getAttribute('data-field-formmsgurl-value');
+    if (!successUrlData) return;
+    const newLink = updateLinkWithParams(successUrlData, dataValuesList);
+    div.setAttribute('data-field-formmsgurl-value', newLink);
+  });
+  
   const formsList = document.querySelectorAll('form');
   formsList.forEach(form => {
     const successUrlData = form.getAttribute('data-success-url');
@@ -64,5 +72,6 @@ window.onload = function () {
     const newLink = updateLinkWithParams(successUrlData, dataValuesList);
     form.setAttribute('data-success-url', newLink);
   });
+
 }
 

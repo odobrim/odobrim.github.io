@@ -49,6 +49,14 @@ window.onload = function () {
       const newLink = updateLinkWithParams(elem.href, dataValuesList);
       elem.href = newLink;
     };
-  })
+  });
+  
+  const formsList = document.querySelectorAll('form');
+  formsList.forEach(form => {
+    const successUrlData = form.getAttribute('data-success-url');
+    if (!successUrlData) return;
+    const newLink = updateLinkWithParams(successUrlData, dataValuesList);
+    form.setAttribute('data-success-url', newLink);
+  });
 }
 

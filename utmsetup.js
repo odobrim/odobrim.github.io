@@ -46,7 +46,7 @@ getDataFromAddressBar = () => (
   ]
 )
 
-window.onload = function () {
+const readyFunction = () => {
   const dataValuesList = getDataFromAddressBar();
   const linksList = document.querySelectorAll('a');
 
@@ -72,6 +72,7 @@ window.onload = function () {
     const newLink = updateLinkWithParams(successUrlData, dataValuesList);
     form.setAttribute('data-success-url', newLink);
   });
-
 }
+
+document.addEventListener('DOMContentLoaded', readyFunction);
 

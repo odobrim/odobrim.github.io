@@ -86,6 +86,14 @@ var _odobrimWidget = (function(window, document) {
             }
         });
     }
+    
+    function validateHEXParams(keys, data) {
+        keys.forEach(function(key) {
+            if (!data[key].match(/^[0-9A-Fa-f]{6}$/) {
+                throw new Error('"' + key + '" need to be HEX format');
+            }
+        });
+    }
 
     
     if (window !== window.top) {
@@ -135,6 +143,8 @@ var _odobrimWidget = (function(window, document) {
 
 
                 validateRequiredParams(['partnerId', 'server', 'type', 'widgetId'], data);
+                
+                validateHEXParams(['textColor', 'bgColor', 'buttonColor', 'h1Color', 'h2Color'], data);
 
 
                 var frame = document.createElement('iframe');
